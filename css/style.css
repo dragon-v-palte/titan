@@ -13,9 +13,14 @@ header {
 }
 
 .header__title {
-    padding: 20px 130px;
+    padding: 20px 10%;
+}
+.header__title .row  { 
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .header__title img.header__logo {
@@ -27,8 +32,6 @@ header {
 .header__title .header__text {
     font-size: 14px;
     color: #9AAFBB;
-    width: 400px;
-    padding: 0 30px;
 }
 
 .header__title .header__contact {
@@ -37,7 +40,12 @@ header {
     padding: 0 40px;
 }
 
+.header__contact a {
+    text-align: right;
+}
+
 .header__contact .header__phone {
+    text-align: right;
     font-weight: bold;
     font-size: 18px;
     color: #212121;
@@ -266,7 +274,7 @@ header {
 
 .worked {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
     width: 100%;
     max-width: 1200px;
     background: #FFFFFF;
@@ -574,6 +582,160 @@ header {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     margin:  20px;
+}
+
+.page__title {
+    padding: 40px 10%;
+}
+
+h1 {
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 40px;
+    color: #282560;
+}
+
+.breadcrumbs {
+    list-style: none;
+    font-size: 14px;
+    color: #637986;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.breadcrumbs li {
+    float: left;
+    margin-right: 7px;
+}
+
+.breadcrumbs li::before {
+    content: " / ";
+    color: #637986;
+}
+
+.breadcrumbs li:nth-child(1)::before {
+    content: "";
+}
+
+.breadcrumbs li.active {
+    color: orangered;
+}
+
+.page__title p {
+    margin-top: 20px;
+}
+
+.portfolio__pager  {
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.portfolio__pager button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #00A7B9;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.portfolio__pager ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio__pager li {
+    float: left;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    margin: 0 15px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.portfolio__pager li.active {
+    width: 30px;
+    height: 40px;
+    color:#FFFFFF;
+    background: #00A7B9;
+    border-radius: 3px;
+}
+
+.contacts__text {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 10% 100px;
+    margin: 0 auto;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 18px;
+    color: #282560;
+}
+
+.contacts__text .row {
+    padding-bottom: 50px;
+}
+
+.contacts__text img {
+    margin: 0 20px;
+}
+
+.contacts__text a {
+    color: inherit;
+}
+
+.contacts-text__phone {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contacts-text__phone-number {
+    font-size: 28px;
+}
+
+.contacts__map{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.contacts__map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 20px;
 }
 
 footer {
