@@ -8,11 +8,9 @@
     
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -22,7 +20,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start">
-						<img class="header__logo" src="img/site-logo.png" alt="">
+						<a href="index.html">
+							<img class="header__logo" src="img/site-logo.png" alt="">
+						</a>
 					</div>
 					<div class="col-3 col-xl-4 d-none d-lg-flex align-items-center">
 						<span class="header__text">Строительство, ремонт и отделка помещений в Москве и Московской области</span>
@@ -36,7 +36,9 @@
 						</div>
 					</div>
 					<div class="col-12 col-sm-5 offset-sm-0 col-md-3 offset-md-0 col-lg-3 col-xl-2 d-flex align-items-center justify-content-center justify-content-md-end">
-						<button class="btn-choose header__btn-feedback">Обратный звонок</button>
+						<a href="tel:+749534567">
+							<button class="btn-choose header__btn-feedback" type="button">Обратный звонок</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -57,86 +59,76 @@
     </header>
     
     <div class="hero-block">
-		<div class="codntainer-fluid">
-			<div id="carousel1" class="carousel slide" data-ride="carousel">
-				<ul class="carousel-indicators">
-					<li data-target="#carousel1" data-slide-to="0" class="ca-indi active"></li>
-					<li data-target="#carousel1" data-slide-to="1" class="ca-indi"></li>
-					<li data-target="#carousel1" data-slide-to="2" class="ca-indi"></li>
-				</ul>
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<div class="carousel-view">
-							<img src="img/hero-img.jpg" alt="First slide">
-						</div>						
-						<div class="carousel-caption d-none d-lg-block">
-							<div class="carousel-text">
-								<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
-								<p>магазинов, бутиков, ресторанов, жилых помещений</p>
-								<button type="button" class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
-								<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
-									</svg>
-								Заказать беплатный расчет</button>
-							</div>
-						</div>			
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-view">
-							<img src="img/hero-img.jpg" alt="First slide">
-						</div>					
-						<div class="carousel-caption d-none d-lg-block">
-							<div class="carousel-text">
-								<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
-								<p>магазинов, бутиков, ресторанов, жилых помещений</p>
-								<button class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
-								<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
-									</svg>
-								Заказать беплатный расчет</button>
-							</div>
-						</div>							
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-view">
-							<img src="img/hero-img.jpg" alt="First slide">
-						</div>						
-						<div class="carousel-caption d-none d-lg-block">
-							<div class="carousel-text">
-								<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
-								<p>магазинов, бутиков, ресторанов, жилых помещений</p>
-								<button class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
-								<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
-									</svg>
-								Заказать беплатный расчет</button>
-							</div>
-						</div>	
-					</div>
+		<div id="carousel1" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#carousel1" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel1" data-slide-to="1"></li>
+				<li data-target="#carousel1" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="carousel-view">
+						<img src="img/hero-img.jpg" alt="First slide">
+					</div>						
+					<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-text">
+							<div class="carousel-overlay"></div>
+							<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
+							<p>магазинов, бутиков, ресторанов, жилых помещений</p>
+							<button type="button" class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
+							<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
+								</svg>
+							Заказать беплатный расчет</button>
+						</div>
+					</div>			
 				</div>
-				
-				<a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#carousel1" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</a>
+				<div class="carousel-item">
+					<div class="carousel-view">
+						<img src="img/hero-img.jpg" alt="First slide">
+					</div>					
+					<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-text">
+							<div class="carousel-overlay"></div>
+							<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
+							<p>магазинов, бутиков, ресторанов, жилых помещений</p>
+							<button class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
+							<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
+								</svg>
+							Заказать беплатный расчет</button>
+						</div>
+					</div>							
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-view">
+						<img src="img/hero-img.jpg" alt="First slide">
+					</div>						
+					<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-text">
+							<div class="carousel-overlay"></div>
+							<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
+							<p>магазинов, бутиков, ресторанов, жилых помещений</p>
+							<button class="btn-choose carousel-btn" data-toggle="modal" data-target="#free-calc">
+							<svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.1649 0H1.06847C0.479233 0 0 0.4796 0 1.06847V20.9315C0 21.5204 0.479233 22 1.06847 22H16.1649C16.7541 22 17.2333 21.5204 17.2333 20.9315V1.06847C17.2333 0.4796 16.7541 0 16.1649 0ZM5.86667 20.1667H1.83333V16.1333H5.86667V20.1667ZM5.86667 15.4H1.83333V11.3667H5.86667V15.4ZM5.86667 10.6333H1.83333V6.6H5.86667V10.6333ZM10.6333 20.1667H6.6V16.1333H10.6333V20.1667ZM10.6333 15.4H6.6V11.3667H10.6333V15.4ZM10.6333 10.6333H6.6V6.6H10.6333V10.6333ZM15.4 20.1667H11.3667V11.3667H15.4V20.1667ZM15.4 10.6333H11.3667V6.6H15.4V10.6333ZM15.4 5.5H1.83333V1.83333H15.4V5.5Z" fill="#282560"/>
+								</svg>
+							Заказать беплатный расчет</button>
+						</div>
+					</div>	
+				</div>
 			</div>
-				<!-- <div class="hero__title">
-					<h1>Профессиональный ремонт помещений в срок и под ключ с гарантией 1 год</h1>
-					<p>магазинов, бутиков, ресторанов, жилых помещений</p>
-					<button>Заказать беплатный расчет</button>
-				</div>
-				<div class="hero__navigation">
-					<span class="hero-block__point"></span>
-					<span class="hero-block__point active-point"></span>
-					<span class="hero-block__point"></span>
-				</div> -->
-
+			
+			<a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#carousel1" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
 		</div>
     </div>
     
-    <div class="statistic">
+    <div class="statistic statistic-index">
 		<div class="container">
 			<div class="statistic__content">
 				<div class="statistic__info statistic-info">
@@ -327,15 +319,19 @@
 			<div class="thanks-letter__title">Благодарственные письма</div>
 			<div class="thanks-letter__list">
 				<div class="thanks-letter__item">
-					
-						<img src="img/letter-1.jpg" alt="" id="thanks-letter">
-					
+					<a href="img/letter-1.jpg" data-lightbox="roadtrip" data-title="My caption">
+						<img src="img/letter-1.jpg" alt="" id="thanks-letter1">
+					</a>
 				</div>
 				<div class="thanks-letter__item">
-					<img src="img/letter-2.jpg" alt="" id="thanks-letter1">
+					<a href="img/letter-2.jpg" data-lightbox="roadtrip" data-title="My caption">
+						<img src="img/letter-2.jpg" alt="" id="thanks-letter1">
+					</a>
 				</div>
 				<div class="thanks-letter__item">
-					<img src="img/letter-3.jpg" alt="" id="thanks-letter2">
+					<a href="img/letter-3.jpg" data-lightbox="roadtrip" data-title="My caption">
+						<img src="img/letter-3.jpg" alt="" id="thanks-letter1">
+					</a>
 				</div>
 			</div>
 			<a href="" class="thanks-letter__more">Показать еще</a>
@@ -359,13 +355,15 @@
     <footer>
 		<div class="container">
 			<div class="footer__top">
-				<img class="footer__logo" src="img/site-logo-white.png" alt="">
+				<a href="index.html">
+					<img class="footer__logo" src="img/site-logo-white.png" alt="">
+				</a>
 				<ul class="footer__menu footer-menu">
-					<li class="footer-menu__item"><a href="">Главная</a></li>
-					<li class="footer-menu__item"><a href="">Галерея</a></li>
-					<li class="footer-menu__item"><a href="">Портфолио</a></li>
-					<li class="footer-menu__item"><a href="">О нас</a></li>
-					<li class="footer-menu__item"><a href="">Контакты</a></li>
+					<li class="footer-menu__item"><a href="index.html">Главная</a></li>
+					<li class="footer-menu__item"><a href="gallery.html">Галерея</a></li>
+					<li class="footer-menu__item"><a href="portfolio.html">Портфолио</a></li>
+					<li class="footer-menu__item"><a href="about.html">О нас</a></li>
+					<li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
 					<li class="footer-menu__item"><a href="">Политика конфиденциальности</a></li>
 				</ul>
 				<div class="footer__contacts">
@@ -383,8 +381,8 @@
 		</div>
     </footer>
 	
-	<div class="modal" role="dialog" id="free-calc" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered">
+	<div class="modal" role="dialog" id="free-calc" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
 					<div class="free-calc__content">
@@ -424,7 +422,12 @@
 		</div>
 	</div>
 	
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<script src="js/lightbox.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
