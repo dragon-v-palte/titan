@@ -1,7 +1,7 @@
 var upButton = document.getElementById("button-up");
 
 var pushPin = document.getElementById("push-pin");
-var hero = document.getElementsByClassName("hero-block")[0];
+var headerTop = document.getElementsByClassName("header__top")[0];
 var menu = document.getElementById("menu");
 var sticky = menu.offsetTop;
 
@@ -16,10 +16,10 @@ window.onscroll = function() {
 function stickyMenu() {
 	if (window.pageYOffset > sticky && pushPin.classList.contains("pressed")) {
 		menu.classList.add("sticky");
-		hero.style.paddingTop = "60px";
+		headerTop.style.paddingBottom = "80px";
 	} else {
 		menu.classList.remove("sticky");
-		hero.style.paddingTop = 0;
+		headerTop.style.paddingBottom = "20px";
 	}
 }
 
@@ -41,3 +41,11 @@ pushPin.onclick = function() {
 	pushPin.classList.toggle("pressed");
 	stickyMenu();
 }
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+	itemSelector: '.grid-item',
+	columnWidth: '.grid-sizer',
+	gutter: '.gutter-sizer',
+	percentPosition: true
+});
