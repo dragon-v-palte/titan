@@ -43,16 +43,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bottom">
+		<div class="header__bottom" id="menu">
 			<div class="container">
 				<div class="row">
 					<ul class="header__menu menu">
-						<li class="menu__item"><a href="index.html">Главная</a></li>
-						<li class="menu__item"><a href="portfolio.html">Портфолио</a></li>
-						<li class="menu__item"><a href="gallery.html">Галерея</a></li>
-						<li class="menu__item"><a href="about.html">О нас</a></li>
-						<li class="menu__item"><a href="contacts.html">Контакты</a></li>
+						<a class="menu__item" href="index.html">Главная</a>
+						<a class="menu__item" href="portfolio.html">Портфолио</a>
+						<a class="menu__item" href="gallery.html">Галерея</a>
+						<a class="menu__item" href="about.html">О нас</a>
+						<a class="menu__item" href="contacts.html">Контакты</a>
 					</ul>
+					<div class="push-pin" id="push-pin">
+						<i class="glyphicon glyphicon-pushpin"></i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,13 +95,13 @@
 		</div>
     </div>
 
-    <div class="statistic">
+    <div class="statistic ">
 		<div class="container">
 			<div class="statistic__content">
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">10 </span>
-						<span class="circle__title">лет</span>
+						<span class="statistic-info__title-big">10 </span>
+						<span class="statistic-info__title-small">лет</span>
 					</div>
 					<p class="statistic-info__text">
 						С 2008 года осуществляем строительно-монтажные работы на международном уровне
@@ -106,8 +109,8 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">+100 </span>
-						<span class="circle__title">проектов</span>
+						<span class="statistic-info__title-big">+100 </span>
+						<span class="statistic-info__title-small">проектов</span>
 					</div>
 					<p class="statistic-info__text">
 						Каждый год успешно сдаем порядка 20 проекто
@@ -115,8 +118,8 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title">гарантия </span>
-						<span class="circle__title--big">1 год</span>
+						<span class="statistic-info__title-small">гарантия </span>
+						<span class="statistic-info__title-big">1 год</span>
 					</div>
 					<p class="statistic-info__text">
 						На все монтажные работы Вы получаете 1 год гарантии. Условия гарантии отдельно прописаны в договоре
@@ -124,7 +127,7 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">100%</span>
+						<span class="statistic-info__title-big">100%</span>
 					</div>
 					<p class="statistic-info__text">
 						1000% гарантия сроков - работаем без выходных и праздников
@@ -136,7 +139,7 @@
 
     <div class="thanks-letter">
 		<div class="container">
-			<div class="thanks-letter__title">Документы и сертификаты</div>
+			<h3 class="thanks-letter__title block-title">Документы и сертификаты</h3>
 			<div class="thanks-letter__list">
 				<div class="thanks-letter__item">
 					<a href="img/letter-1.jpg" data-lightbox="roadtrip" data-title="My caption">
@@ -160,7 +163,7 @@
 
     <div class="send-app">
         <div class="send-app__text">
-			<h3 class="send-app__title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
+			<h3 class="send-app__title block-title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
 			<span class="send-app__subtitle">И Вам докажем!</span>
 		</div>
 		<form action="" class="send-app__form">
@@ -172,7 +175,7 @@
 		</form>
     </div>
 
-    <footer>
+	<footer>
 		<div class="container">
 			<div class="footer__top">
 				<a href="index.html">
@@ -188,8 +191,8 @@
 				</ul>
 				<div class="footer__contacts">
 					<span class="footer__address">г. Москва, ул. Большая Филевская, д. 28</span>
-					<a href="tel:+749534567">
-						<span class="footer__phone phone">+7 495 <span class="phone--big"> 123 45 67</span></span>
+					<a class="footer__phone" href="tel:+749534567">
+						<span class="phone">+7 495 </span><span class="phone phone--big"> 123 45 67</span>
 					</a>
 					<span class="footer__email"><a href="" type="email">info@site.ru</a></span>
 				</div>
@@ -199,7 +202,11 @@
 				<span class="copyright__developer">Разработка и продвижение <a href="">HuskiesMedia</a></span>
 			</div>
 		</div>
-    </footer>
+	</footer>
+	
+	<div class="container">
+		<button onclick="upFunction()" type="submit" class="btn-choose btn-up" id="button-up">Наверх</button>
+	</div>
 
 	<div class="modal" role="dialog" id="free-calc" aria-hidden="true">
 		<div class="modal-dialog modal-lg">

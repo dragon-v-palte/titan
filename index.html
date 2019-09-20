@@ -15,13 +15,54 @@
 </head>
 <body>
 
+	<div class="modal" id="free-calc">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="free-calc__content">
+						<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="free-calc__title" id="free-calc-label">Закажите бесплатные расчет стоимости ремонта в Вашем ресторане</h3>
+						<form action="" class="send-app__form">
+							<div class="send-app__text-field">
+								<input type="text" class="send-app__input-text" placeholder="Ваше имя">
+								<input type="text" class="send-app__input-text" placeholder="Ваш телефон">
+							</div>
+							<label class="form-checkbox">
+								<input type="checkbox" required>Я даю согласие на <span class="form-checkbox--link">обработку персональных данных</span>
+							</label>
+							<button type="submit" class="btn-choose">ОТПРАВИТЬ ЗАЯВКУ НА БЕСПЛАТНЫЙ РАСЧЕТ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal" role="dialog" id="image-preview">
+		<div class="modal dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container">
+						<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<img src="" class="image-preview__content" id="image-preview__content">
+						<button type="submit" class="btn-choose">ОТПРАВИТЬ ЗАЯВКУ НА БЕСПЛАТНЫЙ РАСЧЕТ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<header>
 		<div class="header__top">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start">
 						<a href="index.html">
-							<img class="header__logo" src="img/site-logo.png" alt="">
+							<img class="header__logo" src="img/site-logo.png" alt="Титан - строительная компания">
 						</a>
 					</div>
 					<div class="col-3 col-xl-4 d-none d-lg-flex align-items-center">
@@ -29,8 +70,8 @@
 					</div>
 					<div class="col-12 col-sm-6 offset-sm-0 col-md-5 offset-md-0 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center justify-content-md-end">
 						<div class="header__contacts">
-							<a href="tel:+749534567">
-								<span class="header__phone phone">+7 495<span class="phone--big"> 123 45 67</span> </span>
+							<a class="header__phone" href="tel:+749534567">
+								<span class="phone">+7 495</span><span class="phone phone--big"> 123 45 67</span>
 							</a>
 							<span class="header__worktime">пн-пт с 9:00 до 19:00</span>
 						</div>
@@ -47,11 +88,11 @@
 			<div class="container">
 				<div class="row">
 					<ul class="header__menu menu">
-						<li class="menu__item"><a href="index.html">Главная</a></li>
-						<li class="menu__item"><a href="portfolio.html">Портфолио</a></li>
-						<li class="menu__item"><a href="gallery.html">Галерея</a></li>
-						<li class="menu__item"><a href="about.html">О нас</a></li>
-						<li class="menu__item"><a href="contacts.html">Контакты</a></li>
+						<a class="menu__item" href="index.html">Главная</a>
+						<a class="menu__item" href="portfolio.html">Портфолио</a>
+						<a class="menu__item" href="gallery.html">Галерея</a>
+						<a class="menu__item" href="about.html">О нас</a>
+						<a class="menu__item" href="contacts.html">Контакты</a>
 					</ul>
 					<div class="push-pin" id="push-pin">
 						<i class="glyphicon glyphicon-pushpin"></i>
@@ -142,8 +183,8 @@
 			<div class="statistic__content">
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">10 </span>
-						<span class="circle__title">лет</span>
+						<span class="statistic-info__title-big">10 </span>
+						<span class="statistic-info__title-small">лет</span>
 					</div>
 					<p class="statistic-info__text">
 						С 2008 года осуществляем строительно-монтажные работы на международном уровне
@@ -151,8 +192,8 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">+100 </span>
-						<span class="circle__title">проектов</span>
+						<span class="statistic-info__title-big">+100 </span>
+						<span class="statistic-info__title-small">проектов</span>
 					</div>
 					<p class="statistic-info__text">
 						Каждый год успешно сдаем порядка 20 проекто
@@ -160,8 +201,8 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title">гарантия </span>
-						<span class="circle__title--big">1 год</span>
+						<span class="statistic-info__title-small">гарантия </span>
+						<span class="statistic-info__title-big">1 год</span>
 					</div>
 					<p class="statistic-info__text">
 						На все монтажные работы Вы получаете 1 год гарантии. Условия гарантии отдельно прописаны в договоре
@@ -169,7 +210,7 @@
 				</div>
 				<div class="statistic__info statistic-info">
 					<div class="statistic-info__circle">
-						<span class="circle__title--big">100%</span>
+						<span class="statistic-info__title-big">100%</span>
 					</div>
 					<p class="statistic-info__text">
 						1000% гарантия сроков - работаем без выходных и праздников
@@ -181,9 +222,9 @@
     
     <div class="client text-center">
 		<div class="container">
-			<div class="client__title">Наши заказчики</div>
+			<h3 class="client__title block-title">Наши заказчики</h3>
 			<span class="client__text">Известные и уважаемые компании с хорошей репутацией</span>
-			<div class="client__logos">
+			<div class="client__logo-list">
 				<div class="row">
 					<div class="col-6 col-md-4 col-lg-3">
 						<div class="client__logo"><img src="img/logo-ubuntu.png" alt=""></div>
@@ -217,11 +258,11 @@
     <div class="worked">
 		<div class="container">
 			<div class="d-flex flex-column justify-content-center">
-				<div class="worked__title">Мы уже сделали</div>
+				<h3 class="worked__title block-title">Мы уже сделали</h3>
 				<div class="worked__item worked-item">
 					<img src="img/worked-1.jpg" alt="">
 					<div class="worked-item__description">
-						<span class="worked-item__title">Ремонт в ТРЦ “Мозаика</span>
+						<span class="worked-item__title block-subtitle">Ремонт в ТРЦ “Мозаика</span>
 						<div class="worked-item__info">
 							<strong>Площадь:</strong> 23 000 кв. м<br/>
 							<strong>Сроки:</strong> 8 недель
@@ -237,7 +278,7 @@
 				<div class="worked__item worked-item">
 					<img src="img/worked-2.jpg" alt="">
 					<div class="worked-item__description">
-						<span class="worked-item__title">Ремонт в ТРЦ “Ёлки-Иголки”</span>
+						<span class="worked-item__title block-subtitle">Ремонт в ТРЦ “Ёлки-Иголки”</span>
 						<div class="worked-item__info">
 							<strong>Площадь:</strong> 23 000 кв. м<br/>
 							<strong>Сроки:</strong> 8 недель
@@ -264,7 +305,7 @@
 
     <div class="repair">
 		<div class="container">
-			<div class="repair__title">Какие объекты ремонтируем?</div>
+			<h3 class="repair__title block-title">Какие объекты ремонтируем?</h3>
 			<div class="repair__content">
 				<ul class="nav repair__list">
 					<li class="nav-item repair-list__item">
@@ -318,7 +359,7 @@
 
     <div class="work-type">
 		<div class="container">			
-			<div class="work-type__title">Виды работ</div>
+			<h3 class="work-type__title block-title">Виды работ</h3>
 			<div class="work-type__list">
 					<div class="d-flex flex-wrap justify-content-center">
 						<div class="work-type__item"><span>Малоэтажное и промышленное строительство</span></div>
@@ -336,25 +377,25 @@
 
     <div class="arguments">
 		<div class="container">
-			<div class="arguments__title">Почему мы?</div>
+			<h3 class="arguments__title block-title">Почему мы?</h3>
 			<div class="arguments__list">
 				<div class="arguments__item arguments-item">
-					<span class="arguments-item__title">Опыт работы с иностранными сетями</span>
+					<span class="arguments-item__title block-subtitle">Опыт работы с иностранными сетями</span>
 					<span class="arguments-item__subtitle">(KFC, Burger King, Swarovski и многие другие)</span>
 					<span class="arguments-item__text">Благодаря чему мы знаем все европейские стандарты, требования, брендбуки и т. д.</span>
 				</div>
 				<div class="arguments__item arguments-item">
-					<span class="arguments-item__title">12 лет опыта в строительстве</span>
+					<span class="arguments-item__title block-subtitle">12 лет опыта в строительстве</span>
 					<span class="arguments-item__subtitle"></span>
 					<span class="arguments-item__text">Руководство компании имело опыт работы с заказчиками из разных сегментов рынка (Horecs, ритейл, рестораны, коттеджи, LUXE)</span>
 				</div>
 				<div class="arguments__item arguments-item">
-					<span class="arguments-item__title">Все будет идеально</span>
+					<span class="arguments-item__title block-subtitle">Все будет идеально</span>
 					<span class="arguments-item__subtitle"></span>
 					<span class="arguments-item__text">Мы знаем насколько важна в интерьере каждая мелочь, поэтому относимся скурпулезно к каждой детали и пожеланию</span>
 				</div>
 				<div class="arguments__item arguments-item">
-					<span class="arguments-item__title">Крупные скидки и подарки</span>
+					<span class="arguments-item__title block-subtitle">Крупные скидки и подарки</span>
 					<span class="arguments-item__subtitle"></span>
 					<span class="arguments-item__text">При больших/постоянных заказах клиентам полагаются скидки и эксклюзивные подарки</span>
 				</div>
@@ -364,21 +405,21 @@
 
     <div class="thanks-letter">
 		<div class="container">
-			<div class="thanks-letter__title">Благодарственные письма</div>
+			<h3 class="thanks-letter__title block-title">Благодарственные письма</h3>
 			<div class="thanks-letter__list">
 				<div class="thanks-letter__item">
-					<a href="img/letter-1.jpg" data-lightbox="roadtrip" data-title="My caption">
-						<img src="img/letter-1.jpg" alt="" id="thanks-letter1">
+					<a href="img/letter-1.jpg" data-lightbox="roadtrip" data-title="Letter 1">
+						<img src="img/letter-1.jpg" alt="">
 					</a>
 				</div>
 				<div class="thanks-letter__item">
-					<a href="img/letter-2.jpg" data-lightbox="roadtrip" data-title="My caption">
-						<img src="img/letter-2.jpg" alt="" id="thanks-letter1">
+					<a href="img/letter-2.jpg" data-lightbox="roadtrip" data-title="Letter 2">
+						<img src="img/letter-2.jpg" alt="">
 					</a>
 				</div>
 				<div class="thanks-letter__item">
-					<a href="img/letter-3.jpg" data-lightbox="roadtrip" data-title="My caption">
-						<img src="img/letter-3.jpg" alt="" id="thanks-letter1">
+					<a href="img/letter-3.jpg" data-lightbox="roadtrip" data-title="Letter 3">
+						<img src="img/letter-3.jpg" alt="">
 					</a>
 				</div>
 			</div>
@@ -388,7 +429,7 @@
 
     <div class="send-app">
         <div class="send-app__text">
-			<h3 class="send-app__title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
+			<h3 class="send-app__title block-title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
 			<span class="send-app__subtitle">И Вам докажем!</span>
 		</div>
 		<form action="" class="send-app__form">
@@ -416,8 +457,8 @@
 				</ul>
 				<div class="footer__contacts">
 					<span class="footer__address">г. Москва, ул. Большая Филевская, д. 28</span>
-					<a href="tel:+749534567">
-						<span class="footer__phone phone">+7 495 <span class="phone--big"> 123 45 67</span></span>
+					<a class="footer__phone" href="tel:+749534567">
+						<span class="phone">+7 495 </span><span class="phone phone--big"> 123 45 67</span>
 					</a>
 					<span class="footer__email"><a href="" type="email">info@site.ru</a></span>
 				</div>
@@ -431,46 +472,6 @@
 	
 	<div class="container">
 		<button onclick="upFunction()" type="submit" class="btn-choose btn-up" id="button-up">Наверх</button>
-	</div>
-	<div class="modal" role="dialog" id="free-calc" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="free-calc__content">
-						<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h3 class="free-calc__title">Закажите бесплатные расчет стоимости ремонта в Вашем ресторане</h3>
-						<form action="" class="send-app__form">
-							<div class="send-app__text-field">
-								<input type="text" class="send-app__input-text" placeholder="Ваше имя">
-								<input type="text" class="send-app__input-text" placeholder="Ваш телефон">
-							</div>
-							<label class="form-checkbox">
-								<input type="checkbox" required>Я даю согласие на <span class="form-checkbox--link">обработку персональных данных</span>
-							</label>
-							<button type="submit" class="btn-choose">ОТПРАВИТЬ ЗАЯВКУ НА БЕСПЛАТНЫЙ РАСЧЕТ</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" role="dialog" id="image-preview">
-		<div class="modal dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="container">
-						<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<img src="" class="image-preview__content" id="image-preview__content">
-						<button type="submit" class="btn-choose">ОТПРАВИТЬ ЗАЯВКУ НА БЕСПЛАТНЫЙ РАСЧЕТ</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 	
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

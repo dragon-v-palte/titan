@@ -15,13 +15,13 @@
 </head>
 <body>
 
-    <header>
-        <div class="header__top">
+	<header>
+		<div class="header__top">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start">
 						<a href="index.html">
-							<img class="header__logo" src="img/site-logo.png" alt="">
+							<img class="header__logo" src="img/site-logo.png" alt="Титан - строительная компания">
 						</a>
 					</div>
 					<div class="col-3 col-xl-4 d-none d-lg-flex align-items-center">
@@ -29,8 +29,8 @@
 					</div>
 					<div class="col-12 col-sm-6 offset-sm-0 col-md-5 offset-md-0 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center justify-content-md-end">
 						<div class="header__contacts">
-							<a href="tel:+749534567">
-								<span class="header__phone phone">+7 495<span class="phone--big"> 123 45 67</span> </span>
+							<a class="header__phone" href="tel:+749534567">
+								<span class="phone">+7 495</span><span class="phone phone--big"> 123 45 67</span>
 							</a>
 							<span class="header__worktime">пн-пт с 9:00 до 19:00</span>
 						</div>
@@ -43,20 +43,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bottom">
+		<div class="header__bottom" id="menu">
 			<div class="container">
 				<div class="row">
 					<ul class="header__menu menu">
-						<li class="menu__item"><a href="index.html">Главная</a></li>
-						<li class="menu__item"><a href="portfolio.html">Портфолио</a></li>
-						<li class="menu__item"><a href="gallery.html">Галерея</a></li>
-						<li class="menu__item"><a href="about.html">О нас</a></li>
-						<li class="menu__item"><a href="contacts.html">Контакты</a></li>
+						<a class="menu__item" href="index.html">Главная</a>
+						<a class="menu__item" href="portfolio.html">Портфолио</a>
+						<a class="menu__item" href="gallery.html">Галерея</a>
+						<a class="menu__item" href="about.html">О нас</a>
+						<a class="menu__item" href="contacts.html">Контакты</a>
 					</ul>
+					<div class="push-pin" id="push-pin">
+						<i class="glyphicon glyphicon-pushpin"></i>
+					</div>
 				</div>
 			</div>
 		</div>
-    </header>
+	</header>
 
     <div class="page__portfolio">
 		<div class="container">
@@ -78,7 +81,7 @@
 				<div class="worked__item worked-item">
 					<img src="img/worked-1.jpg" alt="">
 					<div class="worked-item__description">
-						<span class="worked-item__title">Ремонт в ТРЦ “Мозаика</span>
+						<span class="worked-item__title block-subtitle">Ремонт в ТРЦ “Мозаика</span>
 						<div class="worked-item__info">
 							<strong>Площадь:</strong> 23 000 кв. м<br/>
 							<strong>Сроки:</strong> 8 недель
@@ -94,10 +97,10 @@
 				<div class="worked__item worked-item">
 					<img src="img/worked-2.jpg" alt="">
 					<div class="worked-item__description">
-						<span class="worked-item__title">Ремонт в ТРЦ “Ёлки-Иголки”</span>
+						<span class="worked-item__title block-subtitle">Ремонт в ТРЦ “Ёлки-Иголки”</span>
 						<div class="worked-item__info">
-							<strong>Площадь:</strong> 23 000 кв. м<br/>
-							<strong>Сроки:</strong> 8 недель
+							<strong>Площадь:</strong> 40 500 кв. м<br/>
+							<strong>Сроки:</strong> 12 недель
 						</div>
 						<p class="worked-item__text">
 							Внешний вид магазина очень сильно влияет на его посещаемость. 
@@ -110,10 +113,10 @@
 				<div class="worked__item worked-item">
 					<img src="img/worked-3.jpg" alt="">
 					<div class="worked-item__description">
-						<span class="worked-item__title">Ремонт в ТРЦ “Ёлки-Иголки”</span>
+						<span class="worked-item__title block-subtitle">Ремонт в “Burger King”</span>
 						<div class="worked-item__info">
-							<strong>Площадь:</strong> 23 000 кв. м<br/>
-							<strong>Сроки:</strong> 8 недель
+							<strong>Площадь:</strong> 1 800 кв. м<br/>
+							<strong>Сроки:</strong> 1 месяц
 						</div>
 						<p class="worked-item__text">
 							Внешний вид магазина очень сильно влияет на его посещаемость. 
@@ -123,29 +126,29 @@
 						</p>
 					</div>
 				</div>
+			</div>		
+			<div class="portfolio__pager">
+				<button class="portfolio-pager__button">
+					<i class="glyphicon glyphicon-chevron-left"></i>
+				</button>
+				<ul class="portfolio-pager__list">
+					<li class="portfolio-pager__item">1</li>
+					<li class="portfolio-pager__item">2</li>
+					<li class="portfolio-pager__item active">3</li>
+					<li class="portfolio-pager__item">4</li>
+					<li class="portfolio-pager__item">5</li>
+				</ul>
+				<button class="portfolio-pager__button">
+						<i class="glyphicon glyphicon-chevron-right"></i>
+				</button>
 			</div>
 		</div>
-        <div class="portfolio__pager">
-            <button class="portfolio__button">
-                <i class="glyphicon glyphicon-chevron-left"></i>
-            </button>
-            <ul class="portfolio-pager__list">
-                <li class="portfolio-pager__item">1</li>
-                <li class="portfolio-pager__item">2</li>
-                <li class="portfolio-pager__item active">3</li>
-                <li class="portfolio-pager__item">4</li>
-                <li class="portfolio-pager__item">5</li>
-            </ul>
-            <button class="portfolio__button">
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-            </button>
-        </div>
     </div>
 
 
     <div class="send-app">
         <div class="send-app__text">
-			<h3 class="send-app__title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
+			<h3 class="send-app__title block-title">На протяжении 10 лет, год за годом, мы доказываем, что лучшие на этом рынке</h3>
 			<span class="send-app__subtitle">И Вам докажем!</span>
 		</div>
 		<form action="" class="send-app__form">
@@ -157,7 +160,7 @@
 		</form>
     </div>
 
-    <footer>
+	<footer>
 		<div class="container">
 			<div class="footer__top">
 				<a href="index.html">
@@ -173,8 +176,8 @@
 				</ul>
 				<div class="footer__contacts">
 					<span class="footer__address">г. Москва, ул. Большая Филевская, д. 28</span>
-					<a href="tel:+749534567">
-						<span class="footer__phone phone">+7 495 <span class="phone--big"> 123 45 67</span></span>
+					<a class="footer__phone" href="tel:+749534567">
+						<span class="phone">+7 495 </span><span class="phone phone--big"> 123 45 67</span>
 					</a>
 					<span class="footer__email"><a href="" type="email">info@site.ru</a></span>
 				</div>
@@ -184,7 +187,11 @@
 				<span class="copyright__developer">Разработка и продвижение <a href="">HuskiesMedia</a></span>
 			</div>
 		</div>
-    </footer>
+	</footer>
+	
+	<div class="container">
+		<button onclick="upFunction()" type="submit" class="btn-choose btn-up" id="button-up">Наверх</button>
+	</div>
 
 	<div class="modal" role="dialog" id="free-calc" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
